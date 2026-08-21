@@ -27,14 +27,14 @@ mkdocs serve
 Potom otvor `http://127.0.0.1:8000` v prehliadači. Pri každej zmene `.md` súboru sa web sám obnoví.
 (Ak príkaz `mkdocs` nie je v PATH, použi `python -m mkdocs serve` / `python -m mkdocs build`.)
 
-## Ako materiál vydať online (voliteľné)
+## Ako materiál vydať online
+
+Web beží na GitHub Pages: **https://saman1001.github.io/navrh-a-tvorba-webstranok/**
 
 ```bash
-mkdocs build      # vygeneruje statický web do priečinka site/
+python -m mkdocs gh-deploy --force   # build + nasadenie na GitHub Pages (vetva gh-pages)
+mkdocs build                          # len lokálny build do site/ (dá sa otvoriť dvojklikom)
 ```
-
-Priečinok `site/` sa dá nahrať na akýkoľvek hosting, alebo publikovať cez GitHub Pages
-(`mkdocs gh-deploy`).
 
 ## Poznámka k prostrediu predmetu
 
