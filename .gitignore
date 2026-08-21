@@ -10,6 +10,7 @@ DEV.md
 webdizajn/
 _archiv/
 *.zip
+/*.pdf
 
 # Python / editor
 __pycache__/
