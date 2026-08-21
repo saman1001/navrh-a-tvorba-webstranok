@@ -1,0 +1,100 @@
+site_name: Návrh a tvorba webových stránok
+site_description: Predmet Návrh a tvorba webových stránok pre študentov elektronického obchodu a manažmentu — webdizajn a vibe coding s AI.
+site_author: Juraj Fabuš
+site_url: https://saman1001.github.io/navrh-a-tvorba-webstranok/
+repo_url: https://github.com/saman1001/navrh-a-tvorba-webstranok
+repo_name: navrh-a-tvorba-webstranok
+copyright: "© 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline"
+docs_dir: docs
+# false = generuje blok-8.html (nie blok-8/index.html), aby sa HTML dalo otvoriť aj dvojklikom (file://)
+use_directory_urls: false
+
+theme:
+  name: material
+  language: sk
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Prepnúť na tmavý režim
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Prepnúť na svetlý režim
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/copy-lokalne.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Úvod: index.md
+  - "Časť 1 — Webdizajn":
+      - Prehľad: 01-webdizajn/index.md
+      - "Blok 1 — Cieľ webu": 01-webdizajn/blok-1-ciel-webu.md
+      - "Blok 2 — Persóny": 01-webdizajn/blok-2-persony.md
+      - "Blok 3 — Informačná architektúra": 01-webdizajn/blok-3-informacna-architektura.md
+      - "Blok 4 — Papierový prototyp": 01-webdizajn/blok-4-papierovy-prototyp.md
+      - "Blok 5 — Interaktívny prototyp": 01-webdizajn/blok-5-interaktivny-prototyp.md
+  - "Časť 2 — Vibe coding":
+      - Prehľad: 02-vibe-coding/index.md
+      - "Blok 6 — Čo je web a Style guide": 02-vibe-coding/blok-6-co-je-web-a-styleguide.md
+      - "Blok 7 — Web stránka (portfólio)": 02-vibe-coding/blok-7-webstranka.md
+      - "Blok 8 — Git a oprava chýb": 02-vibe-coding/blok-8-git-a-oprava.md
+      - "Blok 9 — API a bezpečnosť": 02-vibe-coding/blok-9-api-a-bezpecnost.md
+      - "Blok 10 — Interaktivita a nasadenie": 02-vibe-coding/blok-10-interaktivita-a-nasadenie.md
+      - "Blok 11 — Vlastný projekt": 02-vibe-coding/blok-11-vlastny-projekt.md
+  - "Záver":
+      - "Blok 12 — Referát a prezentácia": 03-zaver/blok-12-referat-a-prezentacia.md
+  - "Znalostná báza":
+      - "Prostredie (Codespaces)": znalostna-baza/prostredie-codespaces.md
+      - "Čo je web": znalostna-baza/co-je-web.md
+      - "Prvky webstránky": znalostna-baza/prvky-webstranky.md
+      - "Kontrola webu": znalostna-baza/kontrola-webu.md
+      - "Git — záchranná brzda": znalostna-baza/git-zachranna-brzda.md
+      - "Bezpečnosť kľúčov": znalostna-baza/bezpecnost-klucov.md
+      - "Nasadenie (GitHub Pages)": znalostna-baza/nasadenie-github-pages.md

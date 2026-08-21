@@ -1,0 +1,17 @@
+# Generovaný web — na GitHub Pages ho nasadzuje mkdocs gh-deploy
+site/
+
+# Interné materiály vyučujúceho — nepatria do verejného repozitára
+SYLABUS-CVICENIA.md
+CURRENT.md
+DEV.md
+
+# Pôvodné podklady a archív — zdroje, nie súčasť webu
+webdizajn/
+_archiv/
+*.zip
+
+# Python / editor
+__pycache__/
+.venv/
+.vscode/
