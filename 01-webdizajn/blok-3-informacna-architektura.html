@@ -1,0 +1,1560 @@
+
+<!doctype html>
+<html lang="sk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Predmet Návrh a tvorba webových stránok pre študentov elektronického obchodu a manažmentu — webdizajn a vibe coding s AI.">
+      
+      
+        <meta name="author" content="Juraj Fabuš">
+      
+      
+        <link rel="canonical" href="https://saman1001.github.io/navrh-a-tvorba-webstranok/01-webdizajn/blok-3-informacna-architektura.html">
+      
+      
+        <link rel="prev" href="blok-2-persony.html">
+      
+      
+        <link rel="next" href="blok-4-papierovy-prototyp.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Blok 3 — Informačná architektúra - Návrh a tvorba webových stránok</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blok-3-informacna-architektura" class="md-skip">
+          Preskočiť na obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Hlavička">
+    <a href="../index.html" title="Návrh a tvorba webových stránok" class="md-header__button md-logo" aria-label="Návrh a tvorba webových stránok" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Návrh a tvorba webových stránok
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blok 3 — Informačná architektúra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Prepnúť na tmavý režim"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Prepnúť na tmavý režim" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Prepnúť na svetlý režim"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Prepnúť na svetlý režim" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hľadať" placeholder="Hľadať" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhľadávanie">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistiť" aria-label="Vyčistiť" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Spúšťam hľadanie
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/saman1001/navrh-a-tvorba-webstranok" title="Zobraziť repozitár" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    navrh-a-tvorba-webstranok
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigácia" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Návrh a tvorba webových stránok" class="md-nav__button md-logo" aria-label="Návrh a tvorba webových stránok" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Návrh a tvorba webových stránok
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/saman1001/navrh-a-tvorba-webstranok" title="Zobraziť repozitár" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    navrh-a-tvorba-webstranok
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Úvod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Časť 1 — Webdizajn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Časť 1 — Webdizajn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-1-ciel-webu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 1 — Cieľ webu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-2-persony.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 2 — Persóny
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 3 — Informačná architektúra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="blok-3-informacna-architektura.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 3 — Informačná architektúra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#co-sa-v-tomto-bloku-naucis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Čo sa v tomto bloku naučíš
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-1-z-person-vypis-funkcie-a-obsah" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Z persón vypíš funkcie a obsah 📋
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-2-card-sorting-s-kolegom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Card sorting s kolegom 🃏
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-3-nakresli-mind-mapu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — Nakresli mind mapu 🗺️
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-4-skontroluj-architekturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Skontroluj architektúru 🔎
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skontroluj-si-vystup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Skontroluj si výstup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zhrnutie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Zhrnutie
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-4-papierovy-prototyp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 4 — Papierový prototyp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blok-5-interaktivny-prototyp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 5 — Interaktívny prototyp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Časť 2 — Vibe coding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Časť 2 — Vibe coding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prehľad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-6-co-je-web-a-styleguide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 6 — Čo je web a Style guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-7-webstranka.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 7 — Web stránka (portfólio)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-8-git-a-oprava.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 8 — Git a oprava chýb
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-9-api-a-bezpecnost.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 9 — API a bezpečnosť
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-10-interaktivita-a-nasadenie.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 10 — Interaktivita a nasadenie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-vibe-coding/blok-11-vlastny-projekt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 11 — Vlastný projekt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Záver
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Záver
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-zaver/blok-12-referat-a-prezentacia.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blok 12 — Referát a prezentácia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Znalostná báza
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Znalostná báza
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/prostredie-codespaces.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prostredie (Codespaces)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/co-je-web.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Čo je web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/prvky-webstranky.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prvky webstránky
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/kontrola-webu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontrola webu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/git-zachranna-brzda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git — záchranná brzda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/bezpecnost-klucov.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bezpečnosť kľúčov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../znalostna-baza/nasadenie-github-pages.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nasadenie (GitHub Pages)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#co-sa-v-tomto-bloku-naucis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Čo sa v tomto bloku naučíš
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-1-z-person-vypis-funkcie-a-obsah" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 1 — Z persón vypíš funkcie a obsah 📋
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-2-card-sorting-s-kolegom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 2 — Card sorting s kolegom 🃏
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-3-nakresli-mind-mapu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 3 — Nakresli mind mapu 🗺️
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#krok-4-skontroluj-architekturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krok 4 — Skontroluj architektúru 🔎
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skontroluj-si-vystup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Skontroluj si výstup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zhrnutie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Zhrnutie
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="blok-3-informacna-architektura">Blok 3 — Informačná architektúra<a class="headerlink" href="#blok-3-informacna-architektura" title="Permanent link">&para;</a></h1>
+<p>Máš cieľ a máš persóny. Teraz rozhodneš, <strong>čo všetko na webe bude a ako to bude usporiadané</strong> — tomu sa hovorí <strong>informačná architektúra</strong> (IA). Je to prehľadná mapa „vecí" na webe: funkcií, obsahu a ich hierarchie.</p>
+<p>Prečo sa s tým trápiť teraz, na papieri? Lebo presúvať položky v mind mape trvá sekundy. Presúvať sekcie v hotovom prototype trvá hodiny — a prerábať hotový web dni. Každé rozhodnutie, ktoré spravíš teraz, si ušetríš neskôr trikrát. (Vo veľkých firmách je to samostatné povolanie — <em>informačný architekt</em>.)</p>
+<h2 id="co-sa-v-tomto-bloku-naucis">🎯 Čo sa v tomto bloku naučíš<a class="headerlink" href="#co-sa-v-tomto-bloku-naucis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Odvodiť <strong>funkcie a obsah webu z potrieb persón</strong> (nie z toho, „čo majú všetci").</li>
+<li>Overiť si usporiadanie <strong>card sortingom</strong> s kolegom.</li>
+<li>Nakresliť IA ako <strong>mind mapu</strong>.</li>
+<li>Skontrolovať návrh proti štyrom princípom dobrej architektúry.</li>
+</ul>
+<h2 id="krok-1-z-person-vypis-funkcie-a-obsah">Krok 1 — Z persón vypíš funkcie a obsah 📋<a class="headerlink" href="#krok-1-z-person-vypis-funkcie-a-obsah" title="Permanent link">&para;</a></h2>
+<p>Otvor si persóny z bloku 2 a prejdi <strong>každú potrebu a každý krok scenárov</strong>. Ku každej si polož otázku: <em>čo musí byť na webe, aby sa to dalo spraviť?</em> Zapisuj do jednoduchej tabuľky:</p>
+<table>
+<thead>
+<tr>
+<th>Persóna potrebuje…</th>
+<th>…takže web musí mať</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rýchlo zistiť, či je otvorené</td>
+<td>otváracie hodiny hneď na úvodnej stránke</td>
+</tr>
+<tr>
+<td>rezervovať stôl bez telefonovania</td>
+<td>rezervačný formulár</td>
+</tr>
+<tr>
+<td>vedieť, čo dostane</td>
+<td>ponuka / cenník s fotkami</td>
+</tr>
+<tr>
+<td>nájsť cestu</td>
+<td>mapa + adresa v pätičke</td>
+</tr>
+</tbody>
+</table>
+<p>(<em>Vo vzorovom príklade doručovacej spoločnosti takto z potreby „okamžite vedieť o probléme so zásielkou" vznikla funkcia notifikácií — a tá sa potom objaví v architektúre aj v prototype. Presne táto niť </em><em>potreba → funkcia → miesto na webe</em><em> robí návrh obhájiteľným.</em>)</p>
+<p>Výsledok: zoznam 10–20 položiek — funkcie, obsahové bloky, drobnosti (logo, kontakt, sociálne siete). Zatiaľ <strong>bez usporiadania</strong>, len úplný zoznam.</p>
+<div class="admonition tip">
+<p class="admonition-title">Škrtaj smelo</p>
+<p>Ak položka nepomáha žiadnej persóne ani cieľu z bloku 1, škrtni ju — hoci ju „majú všetci". Menší web, ktorý rieši skutočné potreby, porazí veľký web plný balastu.</p>
+</div>
+<h2 id="krok-2-card-sorting-s-kolegom">Krok 2 — Card sorting s kolegom 🃏<a class="headerlink" href="#krok-2-card-sorting-s-kolegom" title="Permanent link">&para;</a></h2>
+<p>Skôr než položky usporiadaš <strong>ty</strong>, over si, ako by ich usporiadal <strong>používateľ</strong>. Technika sa volá <strong>card sorting</strong> a v dvojici trvá 10 minút:</p>
+<ol>
+<li>Napíš každú položku zo zoznamu na samostatný lístok (papieriky / nalepovacie bločky; pri väčšom projekte sa používajú aj online nástroje ako Treejack).</li>
+<li>Daj kôpku kolegovi. Jeho úloha: <strong>zoskupiť lístky tak, ako by to čakal on</strong> ako návštevník, a každú skupinu pomenovať.</li>
+<li>Nezasahuj a nevysvetľuj — len sa pozeraj a rob si poznámky.</li>
+<li>Porovnajte: kde jeho skupiny sedia s tvojou predstavou a kde nie? Tam, kde sa nezhodnete, sa <strong>používatelia budú strácať</strong>.</li>
+</ol>
+<p>Potom sa vymeňte. Skupiny, na ktorých sa zhodnete, sú kandidáti na sekcie a položky menu tvojho webu.</p>
+<h2 id="krok-3-nakresli-mind-mapu">Krok 3 — Nakresli mind mapu 🗺️<a class="headerlink" href="#krok-3-nakresli-mind-mapu" title="Permanent link">&para;</a></h2>
+<p>Teraz štruktúru zakresli ako <strong>mind mapu</strong>: v strede názov webu, z neho hlavné vetvy (sekcie) a z nich konkrétne položky.</p>
+<p><strong>Nástroje</strong> (všetky majú bezplatnú verziu, stačí prehliadač): <a href="https://coggle.it">Coggle</a>, <a href="https://whimsical.com">Whimsical</a>, <a href="https://mind42.com">mind42</a>, prípadne FigJam. Vyber si ľubovoľný — dôležitá je mapa, nie nástroj.</p>
+<p>Pozri si vzor — mind mapu webu doručovacej spoločnosti (robená v Coggle):</p>
+<p>📄 <strong><a href="subory/ia-priklad-dorucovanie.pdf">Príklad IA — doručovacia spoločnosť (PDF)</a></strong></p>
+<p>Všimni si na nej: centrálny uzol → hlavné časti (Monitoring, Nastavenia, Reporty, Profil…) → konkrétne funkcie (priradiť vodiča, stiahnuť foto doručenia…), a pri voliteľných veciach poznámku <em>(voliteľné)</em>. Tvoja mapa bude menšia — pri malom webe je úplne v poriadku 2–4 hlavné vetvy.</p>
+<h2 id="krok-4-skontroluj-architekturu">Krok 4 — Skontroluj architektúru 🔎<a class="headerlink" href="#krok-4-skontroluj-architekturu" title="Permanent link">&para;</a></h2>
+<p>Prejdi hotovú mapu proti <strong>štyrom princípom</strong> dobrej informačnej architektúry:</p>
+<ol>
+<li><strong>Postupné odhaľovanie</strong> — na úvodnej stránke len to hlavné, detaily o úroveň nižšie. Nevyklop všetko naraz.</li>
+<li><strong>Príklady</strong> — ukazuj, nehovor: fotka jedla namiesto vety „máme dobré jedlo", ukážka práce namiesto „sme profesionáli".</li>
+<li><strong>Vstupná stránka</strong> — každá persóna musí zo vstupnej stránky <strong>na prvý pohľad</strong> pochopiť, kde je a kam ísť ďalej.</li>
+<li><strong>Možnosť roztriedenia</strong> — ak máš veľa položiek (produkty, práce, články), používateľ ich musí vedieť filtrovať alebo triediť.</li>
+</ol>
+<p>Nakoniec <strong>AI oponentúra</strong> — over mapu proti persónam:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Navrhujem web: [cieľ]. Toto sú moje persóny: [stručne]. Toto je moja informačná
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>architektúra: [prepíš vetvy mind mapy]. Prejdi persónu po persóne a jej scenár
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>prvého použitia: nájde na webe všetko, čo potrebuje? Čo nenájde alebo bude hľadať
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>inde, než som to umiestnil? Neprestavuj architektúru za mňa — len ukáž diery.
+</code></pre></div>
+<p>Diery oprav — teraz je to zadarmo.</p>
+<h2 id="skontroluj-si-vystup">✅ Skontroluj si výstup<a class="headerlink" href="#skontroluj-si-vystup" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mám <strong>zoznam funkcií a obsahu</strong> odvodený z persón (tabuľka potreba → funkcia).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Usporiadanie prešlo <strong>card sortingom</strong> s kolegom.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mám <strong>mind mapu</strong> webu (export/screenshot vložený do dokumentu „Návrh webu").</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mapa prešla kontrolou proti <strong>4 princípom</strong> a AI oponentúrou.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ku každej vetve mapy viem povedať, <strong>ktorej persóne slúži</strong> — ak neviem, škrtol som ju.</li>
+</ul>
+<h2 id="zhrnutie">📌 Zhrnutie<a class="headerlink" href="#zhrnutie" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Informačná architektúra = <strong>čo na webe bude a ako je to usporiadané</strong> — rozhodnuté skôr, než sa čokoľvek kreslí.</li>
+<li>Funkcie sa <strong>odvádzajú z persón</strong>, nie z toho, čo „má každý web".</li>
+<li><strong>Card sorting</strong> odhalí, kde by sa používatelia strácali — za 10 minút a zadarmo.</li>
+<li>Mind mapa je tvoj plán: v ďalšom bloku podľa nej nakreslíš prvé obrazovky.</li>
+</ul>
+<p>👉 Pokračuj na <strong><a href="blok-4-papierovy-prototyp.html">Blok 4 — Papierový prototyp</a></strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Na začiatok
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pätka" >
+        
+          
+          <a href="blok-2-persony.html" class="md-footer__link md-footer__link--prev" aria-label="Späť: Blok 2 — Persóny">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Späť
+              </span>
+              <div class="md-ellipsis">
+                Blok 2 — Persóny
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="blok-4-papierovy-prototyp.html" class="md-footer__link md-footer__link--next" aria-label="Ďalej: Blok 4 — Papierový prototyp">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Ďalej
+              </span>
+              <div class="md-ellipsis">
+                Blok 4 — Papierový prototyp
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skop\u00edrovan\u00e9 do schr\u00e1nky", "clipboard.copy": "Kop\u00edrova\u0165 do schr\u00e1nky", "search.result.more.one": "1 \u010fal\u0161\u00ed na tejto str\u00e1nke", "search.result.more.other": "# \u010fal\u0161\u00edch na tejto str\u00e1nke", "search.result.none": "\u017diadne vyhovuj\u00face dokumenty", "search.result.one": "Vyhovuj\u00faci dokument: 1", "search.result.other": "Vyhovuj\u00face dokumenty: #", "search.result.placeholder": "Pre vyh\u013ead\u00e1vanie za\u010dni p\u00edsa\u0165", "search.result.term.missing": "Ch\u00fdbaj\u00faci", "select.version": "Vyberte verziu"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/copy-lokalne.js"></script>
+      
+    
+  </body>
+</html>
