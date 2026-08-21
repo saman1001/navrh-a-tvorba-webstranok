@@ -1,7 +1,7 @@
 # Návrh a tvorba webových stránok — zdroj predmetu
 
 Materiál predmetu **Návrh a tvorba webových stránok** pre študentov elektronického obchodu a manažmentu.
-Postavený na [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) — rovnaká technológia ako `aiprakticky.sk/vibe`.
+Postavený na [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## Štruktúra
 
