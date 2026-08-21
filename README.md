@@ -29,7 +29,7 @@ Potom otvor `http://127.0.0.1:8000` v prehliadači. Pri každej zmene `.md` súb
 
 ## Ako materiál vydať online
 
-Web beží na GitHub Pages: **https://saman1001.github.io/navrh-a-tvorba-webstranok/**
+Web beží na GitHub Pages s vlastnou doménou: **https://tvorbawww.fabus.eu**
 
 ```bash
 python -m mkdocs gh-deploy --force   # build + nasadenie na GitHub Pages (vetva gh-pages)
