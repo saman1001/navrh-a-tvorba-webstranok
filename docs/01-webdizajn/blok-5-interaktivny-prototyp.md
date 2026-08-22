@@ -41,6 +41,11 @@ Prekresli (alebo cez Visily prekonvertuj a uprac) obrazovky z papierového proto
 
 Toto je krok, ktorý z obrázkov robí prototyp: nastav **prepojenia** — klik na „Rezervovať" vedie na formulár, klik na logo vedie domov, odoslanie formulára vedie na poďakovanie. V Axure sa to robí interakciami na prvkoch, vo Visily prepojeniami v prototype móde.
 
+Ak pracuješ v Axure, pridaj **minimálne dva druhy interakcií**:
+
+1. **stránkovú** — klik na prvok vedie na inú stránku (prepojenia vyššie),
+2. **štýlovú** — prvok pri interakcii zmení vzhľad, napr. položka menu pri prechode myšou zmení farbu textu (v Axure: *Style Effects → Mouse Over*).
+
 Hotový prototyp si spusti v režime náhľadu a **preklikaj všetky cesty** — každé tlačidlo niekam vedie, žiadna slepá ulička.
 
 ## Krok 4 — Test: papier vs. klik 🧪
@@ -84,11 +89,16 @@ Nálada, farby, príklady webov, ktorých štýl sa ti páči.
 !!! example "Ukážka: ako rýchlo vie AI čítať tvoj návrh"
     Na záver bloku vyučujúci predvedie, ako moderné AI nástroje (napr. **Claude Design**) premenia hotový design brief na návrh stránky za pár minút. Uvidíš, prečo sa celý semester oplatilo pracovať na zadaní: AI je presne taká dobrá, aké dobré je zadanie, ktoré dostane.
 
+    Pozri si to na vzorovom príklade doručovacej spoločnosti — brief (vrátane promptu na začiatku) a to, čo z neho Claude Design vygeneroval:
+
+    📄 **[Vzorový design brief — doručovacia spoločnosť (Word)](subory/zadanie-webu-priklad-dorucovanie.docx)** · 🎨 **[Výsledok z Claude Design (PowerPoint)](subory/kuriero-navrh.pptx)**
+
 ## ✅ Skontroluj si výstup
 
 - [ ] Mám **klikateľný prototyp** (Axure alebo Visily) so všetkými obrazovkami z papierovej verzie.
 - [ ] Sú v ňom **zapracované opravy** z guerilla testu a texty sú skutočné, nie výplňové.
 - [ ] **Všetky tlačidlá niekam vedú** — preklikal som každú cestu.
+- [ ] (Axure) Mám **aspoň dva druhy interakcií** — stránkovú (preklik) aj štýlovú (napr. zmena farby v menu).
 - [ ] Prototyp prešiel **druhým testom** (iný kolega) a zádrhely som opravil.
 - [ ] Mám hotový **design brief** `zadanie-webu` so všetkými 5 časťami a uložený tam, kde ho nájdem.
 
