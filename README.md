@@ -21,7 +21,7 @@ Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **p
 Potrebuješ Python (máš ho). V priečinku `tvorba_webstranok`:
 
 ```bash
-pip install mkdocs-material
+pip install mkdocs-material mkdocs-print-site-plugin
 mkdocs serve
 ```
 
@@ -35,6 +35,17 @@ Web beží na GitHub Pages s vlastnou doménou: **https://tvorbawww.fabus.eu**
 ```bash
 python -m mkdocs gh-deploy --force   # build + nasadenie na GitHub Pages (vetva gh-pages)
 mkdocs build                          # len lokálny build do site/ (dá sa otvoriť dvojklikom)
+```
+
+## PDF archív semestra
+
+Plugin `print-site` spája celý web do `site/print_page.html`. Na konci semestra z nej vyrob archívne PDF
+(napr. do `_archiv/`, ktorý sa nekomituje): otvor stránku v prehliadači a **Ctrl+P → uložiť ako PDF**,
+alebo bez klikania:
+
+```bash
+mkdocs build
+chrome --headless --no-pdf-header-footer --print-to-pdf="_archiv/tvorbawww-archiv-RRRR-MM-DD.pdf" site/print_page.html
 ```
 
 ## Poznámka k prostrediu predmetu
