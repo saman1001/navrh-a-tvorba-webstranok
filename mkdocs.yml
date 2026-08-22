@@ -70,6 +70,12 @@ markdown_extensions:
 
 plugins:
   - search
+  # Spojená stránka celého webu na print_page.html — slúži na PDF archív semestra (Ctrl+P alebo headless Chrome)
+  - print-site:
+      add_to_navigation: false
+      add_cover_page: true
+      enumerate_headings: false
+      add_print_site_banner: false
 
 nav:
   - Úvod: index.md
