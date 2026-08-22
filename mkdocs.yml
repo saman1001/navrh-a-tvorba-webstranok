@@ -4,7 +4,7 @@ site_author: Juraj Fabuš
 site_url: https://tvorbawww.fabus.eu/
 repo_url: https://github.com/saman1001/navrh-a-tvorba-webstranok
 repo_name: navrh-a-tvorba-webstranok
-copyright: "© 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline"
+copyright: "© 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline · <a href='#__consent'>Nastavenia cookies</a>"
 docs_dir: docs
 # false = generuje blok-8.html (nie blok-8/index.html), aby sa HTML dalo otvoriť aj dvojklikom (file://)
 use_directory_urls: false
@@ -47,6 +47,22 @@ extra_css:
 
 extra_javascript:
   - javascripts/copy-lokalne.js
+
+# Google Analytics 4 — načíta sa až po odsúhlasení v cookie lište (extra.consent)
+extra:
+  analytics:
+    provider: google
+    property: G-JBCYE5K9PE
+  consent:
+    title: Súbory cookie
+    description: >-
+      Tento web používa cookies len na anonymnú štatistiku návštevnosti
+      (Google Analytics), aby sme vedeli, ktoré časti predmetu ti pomáhajú.
+      Analytika sa zapne až po tvojom súhlase a voľbu môžeš kedykoľvek
+      zmeniť cez „Nastavenia cookies" v pätičke.
+    actions:
+      - accept
+      - reject
 
 markdown_extensions:
   - admonition
