@@ -23,6 +23,8 @@ Na cvičení pracujeme s dvoma cestami — vyber si (alebo skús obe):
 
 **B) Visily — jednoduchá AI cesta v prehliadači.** Bezplatný online nástroj ([visily.ai](https://www.visily.ai)), ktorý vie **z fotky tvojho papierového prototypu vygenerovať digitálny wireframe** — odfotíš papier z bloku 4, nahráš, a máš obrazovky, ktoré len upratáš a prepojíš. Nič neinštaluješ.
 
+Okrem nich sa v praxi na prototypy bežne používa aj **Figma** — spomíname ju, aby ti ten názov nebol cudzí, keď naň narazíš v pracovných inzerátoch alebo v tímoch. Na cvičeniach s ňou ale pracovať nebudeme.
+
 !!! tip "Ktorú cestu si vybrať?"
     Ak chceš zručnosť do životopisu a nevadí ti inštalácia — **Axure** (v praxi oň môžeš zavadiť pri návrhu informačných systémov). Ak chceš rýchly výsledok v prehliadači — **Visily**. Hodnotí sa výsledok (klikateľný prototyp verný tvojmu návrhu), nie nástroj.
 

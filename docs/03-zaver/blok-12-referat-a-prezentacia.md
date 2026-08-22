@@ -6,7 +6,7 @@ Dobrá správa: **nič nové netvoríš.** Všetky podklady už máš — dokume
 
 ## 📄 Referát
 
-Referát dokumentuje celý projekt od cieľa po hotový web. Štruktúra kopíruje bloky predmetu:
+Referát dokumentuje celý projekt od cieľa po hotový web. **Nehodnotí sa podľa toho, ako pekne je napísaný** — slúži ako dôkaz, že si jednotlivé kroky vykonal, vyhodnotil a na základe nich upravoval výsledný web. Štruktúra kopíruje bloky predmetu:
 
 | Časť | Čo obsahuje | Body |
 |---|---|---:|
