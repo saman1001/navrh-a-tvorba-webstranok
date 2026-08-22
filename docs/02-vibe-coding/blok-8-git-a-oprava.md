@@ -87,7 +87,7 @@ Teraz si natrénuješ to najcennejšie: **hľadanie chýb.** Necháme AI vyrobi�
 Napíš do Copilot Chat presne tento prompt (skopíruj celý):
 
 ```
-Vytvor jednostránkový web fiktívnej kaviarne (HTML + Tailwind CSS v4 CDN + trocha JavaScriptu): menu s odkazmi, hero, ponuka nápojov s obrázkami, kontaktný formulár, pätička. Zámerne ukry presne 5 chýb: 1) odkaz v menu vedie na neexistujúcu stránku, 2) jeden obrázok sa nezobrazí (zlá cesta), 3) tlačidlo po kliknutí vyhodí chybu do konzoly, 4) na mobile obsah preteká mimo obrazovku, 5) jeden dôležitý text má veľmi slabý kontrast. Chyby nekomentuj a neprezraď. Napíš len: Hotovo.
+Vytvor jednostránkový web fiktívnej kaviarne (čisté HTML + CSS + trocha JavaScriptu, bez frameworkov): menu s odkazmi, hero, ponuka nápojov s obrázkami, kontaktný formulár, pätička. Zámerne ukry presne 5 chýb: 1) odkaz v menu vedie na neexistujúcu stránku, 2) jeden obrázok sa nezobrazí (zlá cesta), 3) tlačidlo po kliknutí vyhodí chybu do konzoly, 4) na mobile obsah preteká mimo obrazovku, 5) jeden dôležitý text má veľmi slabý kontrast. Chyby nekomentuj a neprezraď. Napíš len: Hotovo.
 ```
 
 Keď AI odpovie „Hotovo", otvor náhľad stránky. **Nepozeraj sa do kódu** — a ani nemusíš. Ideš to preklikať ako obyčajný návštevník.

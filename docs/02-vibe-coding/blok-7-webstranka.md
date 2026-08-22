@@ -17,14 +17,13 @@ Portfólio je jednoducho „vizitka na webe" — miesto, kam môžeš niekoho po
 Otvor **Copilot Chat** (bočný panel s AI) a napíš doň tento prompt. Je kompletný — netreba nič dopĺňať, len skopíruj a odošli:
 
 ```
-Sprav jednostránkovú osobnú stránku (portfólio), kde budem ukazovať svoje projekty. Použi jeden súbor index.html, Tailwind CSS v4 cez toto CDN: <script src=https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4></script>, a čistý JavaScript. Dizajn sprav podľa docs/style-guide.md. Štruktúra: navigácia, hero sekcia s mojím menom a krátkym popisom, sekcia Projekty s 3 kartami, sekcia O mne a pätička s kontaktom. Texty po slovensky. Pridaj jemné animácie. Stránka musí fungovať aj na mobile.
+Sprav jednostránkovú osobnú stránku (portfólio), kde budem ukazovať svoje projekty. Použi čisté HTML, CSS a JavaScript bez frameworkov a bez knižníc z internetu, v troch súboroch: index.html (obsah), styles.css (vzhľad), script.js (správanie). Dizajn sprav podľa docs/style-guide.md — moderný a vzdušný, s dostatkom voľného priestoru. Štruktúra: navigácia, hero sekcia s mojím menom a krátkym popisom, sekcia Projekty s 3 kartami, sekcia O mne a pätička s kontaktom. Texty po slovensky. Pridaj jemné animácie. Stránka musí fungovať aj na mobile.
 ```
 
-Copilot ti vyrobí súbor `index.html` s celou stránkou.
+Copilot ti vyrobí tri súbory — `index.html`, `styles.css` a `script.js` — a v nich celú stránku.
 
 !!! note "Čo znamenajú tie pojmy"
-    - **Tailwind CSS** — nástroj, ktorý uľahčuje pekné štýlovanie stránky. Načíta sa cez jeden riadok (to CDN), nič neinštaluješ.
-    - **CDN** — „internetová knižnica", odkiaľ sa nástroj načíta priamo do stránky.
+    - **Tri súbory = tri vrstvy webu**, ktoré poznáš z [Čo je web](../znalostna-baza/co-je-web.md): `index.html` je obsah (kostra domu), `styles.css` vzhľad (omietka a zariadenie), `script.js` správanie (elektrina). Keď neskôr povieš AI „zmeň farbu tlačidla", uvidíš, že siahne do `styles.css`.
     - **hero sekcia** — veľký úvodný pruh navrchu stránky, prvá vec, ktorú návštevník uvidí.
 
 !!! danger "Vygenerované ešte neznamená hotové"
