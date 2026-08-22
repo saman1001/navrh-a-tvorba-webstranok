@@ -7,8 +7,6 @@ hide:
 
 <div class="tw-hero" markdown>
 
-<span class="tw-hero-badge"><span class="tw-dot"></span>Predmet · Elektronický obchod a manažment</span>
-
 <h1>Od nápadu po <span class="tw-accent">živý web</span> — za jeden semester.</h1>
 
 <p class="tw-hero-lead">Web najskôr navrhneš, potom ho postavíš s AI asistentom a dáš na internet. Bez programovania — tvojou úlohou je rozhodovať, zadávať a kontrolovať.</p>
