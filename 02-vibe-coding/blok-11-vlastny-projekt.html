@@ -1202,6 +1202,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../znalostna-baza/pristupnost-webu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prístupnosť webu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../znalostna-baza/git-zachranna-brzda.html" class="md-nav__link">
         
   
@@ -1478,8 +1506,8 @@
 <h2 id="ako-na-to-slucka-ktoru-uz-poznas">🔁 Ako na to — slučka, ktorú už poznáš<a class="headerlink" href="#ako-na-to-slucka-ktoru-uz-poznas" title="Permanent link">&para;</a></h2>
 <p>Toto je presne ten postup, ktorý si robil celý semester. Teraz ho spravíš sám.</p>
 <h3 id="1-najskor-naplanuj-s-ai-nekoduj-hned">1. Najskôr naplánuj s AI (nekóduj hneď)<a class="headerlink" href="#1-najskor-naplanuj-s-ai-nekoduj-hned" title="Permanent link">&para;</a></h3>
-<p>Nenechaj AI hneď písať kód. Najskôr jej daj svoje zadanie — <strong>skopíruj obsah svojho design briefu</strong> do Copilot Chatu (alebo nahraj súbor do projektu, napr. <code>docs/zadanie-webu.md</code>) a napíš:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Zatiaľ nekóduj. Toto je zadanie webu, ktorý ideme stavať — cieľ, používatelia a štruktúra sú v priloženom design briefe. Navrhni, z akých sekcií bude prvá verzia (MVP) a čo bude v každej sekcii. Drž sa môjho návrhu. Počkaj na moje schválenie.
+<p>Nenechaj AI hneď písať kód. Najskôr <strong>vlož svoj design brief do projektu</strong>: vytvor v priečinku <code>docs/</code> súbor <code>zadanie-webu.md</code> a skopíruj doň text svojho briefu. Nie je to len pomôcka pre AI — súbor je <strong>povinná súčasť odovzdania</strong>: pri hodnotení sa porovnáva, či hotový web zodpovedá tvojmu návrhu. Potom napíš do Copilot Chatu:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Zatiaľ nekóduj. Zadanie webu, ktorý ideme stavať, je v súbore docs/zadanie-webu.md — cieľ, používatelia a štruktúra. Navrhni, z akých sekcií bude prvá verzia (MVP) a čo bude v každej sekcii. Drž sa môjho návrhu. Počkaj na moje schválenie.
 </code></pre></div>
 <p>Prečítaj si návrh a <strong>porovnaj ho so svojím prototypom</strong> — sedí rozloženie? Nechýba funkcia, ktorú potrebuje tvoja persóna? Prípadne uprav („pridaj sekciu s otváracími hodinami", „kontaktný formulár nechcem"). Až keď si spokojný, dáš AI zelenú.</p>
 <h3 id="2-stavaj-po-malych-krokoch">2. Stavaj po malých krokoch<a class="headerlink" href="#2-stavaj-po-malych-krokoch" title="Permanent link">&para;</a></h3>
@@ -1522,7 +1550,9 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Všetky odkazy a tlačidlá fungujú</strong> — preklikal som ich.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Web <strong>funguje na mobile</strong> (<code>F12</code> → ikona mobilu).</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Konzola bez červených chýb</strong> (<code>F12</code> → Console).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Prešiel som <a href="../znalostna-baza/pristupnost-webu.html">5-minútovú kontrolu prístupnosti</a></strong> — Tab test, zoom 200 %, kontrast, alt texty, Lighthouse.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Žiadny tajný kľúč</strong> vo verejnom repozitári.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Design brief je v repozitári</strong> ako <code>docs/zadanie-webu.md</code>.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Web zodpovedá môjmu návrhu z časti 1</strong> — plní cieľ, obsahuje jadro z informačnej architektúry; ak som sa od prototypu odchýlil, viem povedať prečo.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Poslal som link</strong> na hotový web.</li>
 </ul>
