@@ -28,6 +28,8 @@ hide:
 
 </div>
 
+![Od nápadu k živému webu za jeden semester — komiks v piatich krokoch: navrhni web pre skutočných ľudí, stavaj pomocou AI, kontroluj a opravuj chyby, pracuj v cloude cez Codespaces, spusti web a obháj si ho](img/tvorba-webu-za-jeden-semester.jpg){ style="border-radius: 12px; margin-top: 8px;" loading=lazy }
+
 ## Ako je predmet rozdelený
 
 <div class="grid cards" markdown>
