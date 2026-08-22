@@ -18,8 +18,10 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 
 - [x] Kostra MkDocs Material, slovenská lokalizácia, navigácia
 - [x] Vlastný dizajn — petrolejová + koralová paleta, fonty, hero úvod, svetlý/tmavý režim
+- [x] Komiksová infografika dráhy predmetu na úvodnej stránke
 - [x] Kopírovanie promptov aj pri lokálnom otvorení HTML (file://)
 - [x] Build bez warningov (`mkdocs build --strict`), overené interné odkazy
+- [x] PDF archív celého webu (plugin print-site, postup v README)
 
 ## Nasadenie
 
@@ -31,7 +33,8 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 
 - [x] Sylabus 12 cvičení (interný, mimo webu)
 - [x] Námety na prednášky pre prednášajúceho (1 strana A4)
-- [ ] Rubrika hodnotenia referátov a odovzdaných webov
+- [x] Checklist nastavenia Moodle s podmienkami absolvovania (interný, mimo repa)
+- [x] Rubrika hodnotenia referátov a odovzdaných webov (v sylabe)
 
 ## Šablóna pre študentov
 

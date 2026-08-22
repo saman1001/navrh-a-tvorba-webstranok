@@ -12,6 +12,7 @@ Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **p
 - **Záver** (`docs/03-zaver/`) — blok 12: referát a prezentácia.
 - **Znalostná báza** (`docs/znalostna-baza/`) — návody a postupy, na ktoré bloky odkazujú.
 - **Sylabus cvičení** (`SYLABUS-CVICENIA.md`) — metodická príručka pre vyučujúceho (12 cvičení); je mimo `docs/`, takže sa nedostane do webu pre študentov.
+- **Moodle** (`moodle.md`) — interný checklist nastavenia Moodle kurzu s podmienkami absolvovania; mimo repozitára.
 - **Roadmapa** (`ROADMAP.md`) — checklist, čo je hotové a čo čaká.
 - **Stav projektu** (`CURRENT.md`) — interný snapshot stavu pre vývoj; spolu so zadaním (`SPEC.md`) je mimo repozitára.
 - **Pôvodné podklady** (`webdizajn/`) — materiály vyučujúceho, z ktorých vznikla časť 1; nejdú do webu.
