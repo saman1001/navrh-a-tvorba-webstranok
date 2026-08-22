@@ -110,6 +110,9 @@ Ak je tam červená, **nič nemaž a nič neopravuj sám** — celý červený r
 !!! note "Načo je Network?"
     Zoznam v Network ukazuje všetky súbory, ktoré si web sťahuje. Ak je niektorý červený, obvykle to súvisí s rozbitým obrázkom alebo chýbajúcim súborom, ktorý si videl už v kroku 2.
 
+!!! tip "Funguje? Ešte jedna otázka — funguje pre všetkých?"
+    Tento checklist overil, že web **funguje**. Či funguje aj ľuďom so slabším zrakom alebo bez myši, overíš samostatným rýchlym checklistom: [Prístupnosť webu — 5-minútová kontrola](pristupnost-webu.md). Prejdi si ho minimálne raz pred odovzdaním webu.
+
 ---
 
 ## 🗣️ Keď nájdeš problém — ako ho popísať AI

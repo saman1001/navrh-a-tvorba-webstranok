@@ -115,6 +115,7 @@ Prejdi si ho celý. Na konci budeš mať adresu v tvare `https://tvojemeno.githu
     - Fungujú odkazy a tlačidlá? Pridá a vymaže sa úloha?
     - **F12 → Console:** žiadne červené chyby?
     - **Mobil (F12 → ikona mobilu):** vyzerá to dobre aj na malej obrazovke?
+    - **Prístupnosť:** prejdi [5-minútovú kontrolu prístupnosti](../znalostna-baza/pristupnost-webu.md) — práve na živej adrese funguje aj automatický audit **Lighthouse** (na náhľade cez `file://` nejde).
 
 !!! tip "Pozor na úlohy na živej adrese"
     Živá adresa je iná ako tvoj náhľad, takže sa tvári ako **nový prehliadač** — zoznam úloh na nej bude na začiatku **prázdny**. To je správne, tak localStorage funguje (pamätá si dáta pre danú adresu a prehliadač). Skús pridať pár úloh priamo na živej adrese, obnoviť (F5) a over, že ostanú.
@@ -142,7 +143,7 @@ Máš za sebou veľký míľnik. Teraz:
 
 - máš v stránke **interaktívnu appku** — zoznam úloh, ktorý si **pamätá dáta** aj po obnovení a zavretí (vďaka localStorage),
 - vieš pracovať **dvojkrokovo**: najskôr sa AI opýtaš na návrh, potom si sám vyberieš funkcie,
-- overuješ výsledok **vizuálne a funkčne** — preklikaním, testom perzistencie (F5), konzolou (F12) a na mobile,
+- overuješ výsledok **vizuálne a funkčne** — preklikaním, testom perzistencie (F5), konzolou (F12), na mobile a kontrolou prístupnosti (Tab test, Lighthouse),
 - máš celé portfólio **online na verejnej adrese**, ktorú vieš poslať komukoľvek,
 - vieš, že do verejného repozitára **nikdy** nepatrí tajný kľúč.
 

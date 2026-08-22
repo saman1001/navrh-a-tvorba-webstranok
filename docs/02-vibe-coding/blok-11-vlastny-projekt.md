@@ -21,10 +21,10 @@ Toto je presne ten postup, ktorý si robil celý semester. Teraz ho spravíš s�
 
 ### 1. Najskôr naplánuj s AI (nekóduj hneď)
 
-Nenechaj AI hneď písať kód. Najskôr jej daj svoje zadanie — **skopíruj obsah svojho design briefu** do Copilot Chatu (alebo nahraj súbor do projektu, napr. `docs/zadanie-webu.md`) a napíš:
+Nenechaj AI hneď písať kód. Najskôr **vlož svoj design brief do projektu**: vytvor v priečinku `docs/` súbor `zadanie-webu.md` a skopíruj doň text svojho briefu. Nie je to len pomôcka pre AI — súbor je **povinná súčasť odovzdania**: pri hodnotení sa porovnáva, či hotový web zodpovedá tvojmu návrhu. Potom napíš do Copilot Chatu:
 
 ```
-Zatiaľ nekóduj. Toto je zadanie webu, ktorý ideme stavať — cieľ, používatelia a štruktúra sú v priloženom design briefe. Navrhni, z akých sekcií bude prvá verzia (MVP) a čo bude v každej sekcii. Drž sa môjho návrhu. Počkaj na moje schválenie.
+Zatiaľ nekóduj. Zadanie webu, ktorý ideme stavať, je v súbore docs/zadanie-webu.md — cieľ, používatelia a štruktúra. Navrhni, z akých sekcií bude prvá verzia (MVP) a čo bude v každej sekcii. Drž sa môjho návrhu. Počkaj na moje schválenie.
 ```
 
 Prečítaj si návrh a **porovnaj ho so svojím prototypom** — sedí rozloženie? Nechýba funkcia, ktorú potrebuje tvoja persóna? Prípadne uprav („pridaj sekciu s otváracími hodinami", „kontaktný formulár nechcem"). Až keď si spokojný, dáš AI zelenú.
@@ -86,7 +86,9 @@ Než povieš „hotovo", prejdi tento zoznam. Odškrtni každú položku — ak 
 - [ ] **Všetky odkazy a tlačidlá fungujú** — preklikal som ich.
 - [ ] Web **funguje na mobile** (`F12` → ikona mobilu).
 - [ ] **Konzola bez červených chýb** (`F12` → Console).
+- [ ] **Prešiel som [5-minútovú kontrolu prístupnosti](../znalostna-baza/pristupnost-webu.md)** — Tab test, zoom 200 %, kontrast, alt texty, Lighthouse.
 - [ ] **Žiadny tajný kľúč** vo verejnom repozitári.
+- [ ] **Design brief je v repozitári** ako `docs/zadanie-webu.md`.
 - [ ] **Web zodpovedá môjmu návrhu z časti 1** — plní cieľ, obsahuje jadro z informačnej architektúry; ak som sa od prototypu odchýlil, viem povedať prečo.
 - [ ] **Poslal som link** na hotový web.
 
