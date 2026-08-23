@@ -34,9 +34,12 @@
   }
 
   /* Delegovane na document — prežije výmenu obsahu pri navigation.instant
-     a chytí aj tlačidlá vložené neskôr. */
+     a chytí aj tlačidlá vložené neskôr. Material vkladá copy tlačidlo ako
+     .md-code__button[data-md-type="copy"]; .md-clipboard je náš file:// fallback. */
   document.addEventListener("click", function (e) {
-    var btn = e.target && e.target.closest ? e.target.closest(".md-clipboard") : null;
+    var btn = e.target && e.target.closest
+      ? e.target.closest('.md-clipboard, .md-code__button[data-md-type="copy"]')
+      : null;
     if (!btn || !window.umami) return;
     try {
       window.umami.track("prompt_copy", { section: najblizsiNadpis(btn) });
