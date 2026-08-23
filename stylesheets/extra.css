@@ -249,6 +249,9 @@
 .md-footer__direction { color: var(--tw-muted); }
 .md-footer__title { color: var(--tw-ink); }
 .md-footer-meta .md-copyright { color: var(--tw-muted); }
+/* Material dáva © riadku biele písmo (ráta s tmavou pätičkou) — naša pätička je svetlá */
+.md-copyright__highlight { color: var(--tw-muted); }
+.md-copyright__highlight a { color: var(--md-typeset-a-color); }
 
 /* ============================================================
    Úvodná stránka — hero, kroky, zručnosti
