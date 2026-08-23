@@ -43,7 +43,8 @@ site_name: <Názov predmetu>
 site_description: <Popis predmetu>
 site_author: Juraj Fabuš
 site_url: <https://...>
-copyright: "© <rok> <Názov predmetu> · Žilinská univerzita v Žiline"
+# odkaz absolútny — copyright HTML sa vkladá aj na stránky v podpriečinkoch
+copyright: "© <rok> <Názov predmetu> · Žilinská univerzita v Žiline · <a href='https://<doména>/ochrana-sukromia.html'>Ochrana súkromia</a>"
 docs_dir: docs
 # false = generuje blok-8.html (nie blok-8/index.html) — HTML sa dá otvoriť aj dvojklikom (file://)
 use_directory_urls: false
@@ -281,5 +282,6 @@ Zaoblené rohy a lazy loading cez `attr_list`:
 - [ ] `pip install mkdocs-material mkdocs-print-site-plugin`
 - [ ] úvodná stránka: hero + kroky + grid karty + zoznam zručností + tip na znalostnú bázu
 - [ ] založená website v Umami (`analytics.kryptology.sk`) + jej ID a doména v `docs/javascripts/umami.js`
+- [ ] stránka `docs/ochrana-sukromia.md` (mimo nav; skopíruj z referenčného repa, uprav názov predmetu) + odkaz v `copyright`
 - [ ] skontrolovaný svetlý **aj tmavý** režim a mobil (44em breakpoint)
 - [ ] pri odchýlke od tohto guidu: buď ju vrátiť, alebo zapracovať sem

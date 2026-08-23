@@ -4,7 +4,9 @@ site_author: Juraj Fabuš
 site_url: https://tvorbawww.fabus.eu/
 repo_url: https://github.com/saman1001/navrh-a-tvorba-webstranok
 repo_name: navrh-a-tvorba-webstranok
-copyright: "© 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline"
+# Odkaz na súkromie je absolútny — copyright HTML sa vkladá na každú stránku
+# (aj v podpriečinkoch), relatívna cesta by sa tam rozbila
+copyright: "© 2026 Návrh a tvorba webových stránok · Žilinská univerzita v Žiline · <a href='https://tvorbawww.fabus.eu/ochrana-sukromia.html'>Ochrana súkromia</a>"
 docs_dir: docs
 # false = generuje blok-8.html (nie blok-8/index.html), aby sa HTML dalo otvoriť aj dvojklikom (file://)
 use_directory_urls: false
