@@ -249,6 +249,11 @@
 .md-footer__direction { color: var(--tw-muted); }
 .md-footer__title { color: var(--tw-ink); }
 .md-footer-meta .md-copyright { color: var(--tw-muted); }
+/* Material dáva © riadku biele písmo (ráta s tmavou pätičkou) — naša pätička je svetlá.
+   Selektory s .md-footer-meta.md-typeset kvôli špecificite Materialových pravidiel. */
+.md-copyright__highlight { color: var(--tw-muted); }
+.md-footer-meta.md-typeset .md-copyright__highlight a { color: var(--md-typeset-a-color); }
+.md-footer-meta.md-typeset .md-copyright__highlight a:hover { color: var(--md-accent-fg-color); }
 
 /* ============================================================
    Úvodná stránka — hero, kroky, zručnosti
