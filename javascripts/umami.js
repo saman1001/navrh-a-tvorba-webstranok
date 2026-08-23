@@ -4,14 +4,44 @@
    Web beží na GitHub Pages (statický hosting bez reverse-proxy), preto sa
    script načítava priamo z Umami inštancie. Meria len ostrú doménu —
    file://, localhost ani náhľady sa nepočítajú. Umami samo sleduje aj
-   pushState navigáciu (Material navigation.instant). */
+   pushState navigáciu (Material navigation.instant).
+
+   Eventy:
+   - prompt_copy { section } — klik na „kopírovať" pri bloku kódu/promptu;
+     section = id (príp. text) najbližšieho nadpisu nad blokom. */
 (function () {
   if (location.hostname !== "tvorbawww.fabus.eu") return;
-  if (document.querySelector("script[data-website-id]")) return; // už vložený
+  if (window.__twAnalytics) return; // idempotencia pri prípadnom opätovnom spustení
+  window.__twAnalytics = true;
 
   var s = document.createElement("script");
   s.src = "https://analytics.kryptology.sk/script.js";
   s.defer = true;
   s.setAttribute("data-website-id", "e53ee800-2641-4c21-8cfe-a563d5b7e2c2");
   document.head.appendChild(s);
+
+  /* Najbližší nadpis nad prvkom — stúpa po rodičoch a ich predchádzajúcich
+     súrodencoch (nadpis nie je predok <pre>, je to súrodenec v .md-typeset). */
+  function najblizsiNadpis(el) {
+    for (var node = el; node; node = node.parentElement) {
+      for (var sib = node.previousElementSibling; sib; sib = sib.previousElementSibling) {
+        if (/^H[1-4]$/.test(sib.tagName)) {
+          return (sib.id || sib.textContent.trim()).slice(0, 50);
+        }
+      }
+    }
+    return "";
+  }
+
+  /* Delegovane na document — prežije výmenu obsahu pri navigation.instant
+     a chytí aj tlačidlá vložené neskôr. */
+  document.addEventListener("click", function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest(".md-clipboard") : null;
+    if (!btn || !window.umami) return;
+    try {
+      window.umami.track("prompt_copy", { section: najblizsiNadpis(btn) });
+    } catch (err) {
+      // analytika nikdy nesmie pokaziť stránku
+    }
+  });
 })();
