@@ -18,3 +18,6 @@ _archiv/
 __pycache__/
 .venv/
 .vscode/
+
+# Šablóna pre študentov — samostatný git repozitár (saman1001/eoam-vibe-web-template)
+eoam-vibe-web-template/
