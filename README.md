@@ -12,10 +12,11 @@ Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **p
 - **Záver** (`docs/03-zaver/`) — blok 12: referát a prezentácia.
 - **Znalostná báza** (`docs/znalostna-baza/`) — návody a postupy, na ktoré bloky odkazujú.
 - **Sylabus cvičení** (`SYLABUS-CVICENIA.md`) — metodická príručka pre vyučujúceho (12 cvičení); je mimo `docs/`, takže sa nedostane do webu pre študentov.
-- **Moodle** (`moodle.md`) — interný checklist nastavenia Moodle kurzu s podmienkami absolvovania; mimo repozitára.
+- **Style guide predmetových webov** (`style_predmety.md`) — spoločný vizuálny štandard pre weby predmetov; tento web je jeho referenčná implementácia.
 - **Roadmapa** (`ROADMAP.md`) — checklist, čo je hotové a čo čaká.
 - **Stav projektu** (`CURRENT.md`) — interný snapshot stavu pre vývoj; spolu so zadaním (`SPEC.md`) je mimo repozitára.
-- **Pôvodné podklady** (`webdizajn/`) — materiály vyučujúceho, z ktorých vznikla časť 1; nejdú do webu.
+- **Šablóna pre študentov** — samostatný repozitár [eoam-vibe-web-template](https://github.com/saman1001/eoam-vibe-web-template) (lokálne vnorený v tomto priečinku, v tomto repe ignorovaný).
+- **Podklady** (`podklady/`) — pôvodné materiály vyučujúceho, z ktorých vznikla časť 1, a interný checklist Moodle (`moodle.md`); nejdú do webu ani do repozitára.
 
 ## Ako si materiál pozrieť lokálne
 

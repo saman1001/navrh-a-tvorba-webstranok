@@ -22,6 +22,9 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Kopírovanie promptov aj pri lokálnom otvorení HTML (file://)
 - [x] Build bez warningov (`mkdocs build --strict`), overené interné odkazy
 - [x] PDF archív celého webu (plugin print-site, postup v README)
+- [x] Self-hosted Umami analytika bez cookies a consent lišty (namiesto GA4)
+- [x] Stránka Ochrana súkromia s odkazom v pätičke
+- [x] Style guide predmetových webov (`style_predmety.md`), tento web ako referenčná implementácia
 
 ## Nasadenie
 
