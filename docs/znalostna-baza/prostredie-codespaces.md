@@ -114,7 +114,7 @@ Codespace sa „zobudí" a otvorí sa presne tam, kde si prestal — aj s tvojim
 
 ## 💻 Alternatíva: pracovať v predinštalovanom VS Code (bez prehliadača)
 
-Nemusíš pracovať v prehliadači. Ak ti viac vyhovuje **VS Code priamo na počítači** — ten istý program, v ktorom ste písali HTML a CSS — môžeš robiť aj v ňom. Celý zvyšok predmetu funguje rovnako, pretože **AI asistent Copilot je ten istý** v prehliadači aj v počítačovom VS Code.
+Nemusíš pracovať v prehliadači. Ak ti viac vyhovuje **VS Code priamo na počítači** — ten istý editor, aký sa ti v Codespaces otvára v prehliadači, len nainštalovaný v počítači — môžeš robiť aj v ňom. Celý zvyšok predmetu funguje rovnako, pretože **AI asistent Copilot je ten istý** v prehliadači aj v počítačovom VS Code.
 
 Jediné, čo musíš spraviť navyše, je **prihlásiť sa svojím GitHub účtom** — kvôli Copilotovi:
 
