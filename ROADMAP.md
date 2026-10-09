@@ -1,6 +1,6 @@
 # Roadmapa
 
-Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (históriu drží git). Detail rozpracovaných vecí je v CURRENT.md.
+Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (históriu drží git). Súbor je verejný — žiadne interné dohody. Detail rozpracovaných vecí je v CURRENT.md, zadanie v SPEC.md.
 
 ## Obsah predmetu
 
@@ -13,6 +13,8 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Šablóny a vzory na stiahnutie k blokom 1–5 (persóny, IA mind mapa, papierový prototyp, Axure vzor, cieľ webu)
 - [x] Vzorový design brief doručovacej spoločnosti + ukážka výstupu z Claude Design (blok 5)
 - [x] Požiadavka na interakcie v Axure prototype — stránková + štýlová (blok 5)
+- [ ] Postup rozbaľovacieho menu v Axure alebo ekvivalentnom nástroji (blok 5)
+- [ ] Zoznam nástrojov na testovanie webu — responzívnosť, WCAG, HTML, rýchlosť, kompletný test (blok 10)
 
 ## Web
 
@@ -25,6 +27,7 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Self-hosted Umami analytika bez cookies a consent lišty (namiesto GA4)
 - [x] Stránka Ochrana súkromia s odkazom v pätičke
 - [x] Style guide predmetových webov (`style_predmety.md`), tento web ako referenčná implementácia
+- [ ] Pripnuté verzie MkDocs, Material a pluginov v `requirements.txt` (ochrana pred nekompatibilným MkDocs 2.0)
 
 ## Nasadenie
 
