@@ -25,6 +25,7 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Build bez warningov (`mkdocs build --strict`), overené interné odkazy
 - [x] PDF archív celého webu (plugin print-site, postup v README)
 - [x] Self-hosted Umami analytika bez cookies a consent lišty (namiesto GA4)
+- [x] Meranie sťahovania šablón a príkladov — event `file_download { file, ext, section }` v `umami.js` (od 2026-10-10)
 - [x] Stránka Ochrana súkromia s odkazom v pätičke
 - [x] Style guide predmetových webov (`style_predmety.md`), tento web ako referenčná implementácia
 - [ ] Pripnuté verzie MkDocs, Material a pluginov v `requirements.txt` (ochrana pred nekompatibilným MkDocs 2.0)
