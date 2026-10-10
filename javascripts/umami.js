@@ -8,7 +8,11 @@
 
    Eventy:
    - prompt_copy { section } — klik na „kopírovať" pri bloku kódu/promptu;
-     section = id (príp. text) najbližšieho nadpisu nad blokom. */
+     section = id (príp. text) najbližšieho nadpisu nad blokom.
+   - file_download { file, ext, section } — klik na odkaz na súbor
+     (.xlsx, .docx, .pdf, .pptx, .rp, .zip), teda na šablónu alebo príklad.
+     file = názov súboru, ext = prípona, section = najbližší nadpis nad
+     odkazom, stránka je v url_path eventu. Od 2026-10-10. */
 (function () {
   if (location.hostname !== "tvorbawww.fabus.eu") return;
   if (window.__twAnalytics) return; // idempotencia pri prípadnom opätovnom spustení
@@ -43,6 +47,34 @@
     if (!btn || !window.umami) return;
     try {
       window.umami.track("prompt_copy", { section: najblizsiNadpis(btn) });
+    } catch (err) {
+      // analytika nikdy nesmie pokaziť stránku
+    }
+  });
+
+  /* Sťahovanie súborov — klik na odkaz, ktorého cesta končí príponou šablóny
+     alebo príkladu (.xlsx, .docx, .pdf, .pptx, .rp, .zip). Umami samo meria
+     len načítania HTML stránok, klik na súbor by sa inak nezaznamenal.
+     Delegovane na document, odkaz sa nemení a prehliadač ho spracuje ako
+     doteraz. Tracker posiela event s keepalive, takže prežije aj otvorenie
+     PDF v tej istej karte. */
+  var SUBORY = /\.(xlsx|docx|pdf|pptx|rp|zip)$/i;
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || !window.umami) return;
+    var cesta;
+    try {
+      cesta = new URL(a.href, location.href).pathname;
+    } catch (err) {
+      return;
+    }
+    if (!SUBORY.test(cesta)) return;
+    try {
+      window.umami.track("file_download", {
+        file: decodeURIComponent(cesta.split("/").pop()).slice(0, 100),
+        ext: cesta.split(".").pop().toLowerCase(),
+        section: najblizsiNadpis(a)
+      });
     } catch (err) {
       // analytika nikdy nesmie pokaziť stránku
     }
