@@ -13,7 +13,7 @@ Interaktívny prototyp je v praxi **priame zadanie pre grafika a programátora**
 
 ## Krok 1 — Vyber si nástroj 🛠️
 
-Na cvičení pracujeme s dvoma cestami — vyber si (alebo skús obe):
+Na cvičení pracujeme s dvoma cestami — profesionálny nástroj (A) alebo AI nástroj v prehliadači (B alebo C). Vyber si (alebo skús obe):
 
 **A) Axure RP — profesionálny štandard.** Najprepracovanejší prototypovací nástroj; používa sa nielen na weby, ale aj na návrhy mobilných aplikácií a veľkých informačných systémov. Na ňom ti bude vyučujúci postup ukazovať.
 
@@ -23,17 +23,19 @@ Na cvičení pracujeme s dvoma cestami — vyber si (alebo skús obe):
 
 **B) Visily — jednoduchá AI cesta v prehliadači.** Bezplatný online nástroj ([visily.ai](https://www.visily.ai)), ktorý vie **z fotky tvojho papierového prototypu vygenerovať digitálny wireframe** — odfotíš papier z bloku 4, nahráš, a máš obrazovky, ktoré len upratáš a prepojíš. Nič neinštaluješ.
 
+**C) MagicPath — ďalšia AI cesta v prehliadači.** Bezplatný online nástroj ([magicpath.ai](https://www.magicpath.ai)), do ktorého **nahráš fotku papierového prototypu** a v chate požiadaš o jej prekreslenie do wireframu. Obrazovky vznikajú ako skutočný klikateľný web, ktorý zdieľaš odkazom. Registrácia e-mailom, nič neinštaluješ. Bezplatný plán má **20 kreditov za deň** — každé generovanie niečo stojí, preto si fotky priprav vopred a zadávaj jeden jasný prompt, nie pokusy naslepo.
+
 Okrem nich sa v praxi na prototypy bežne používa aj **Figma** — spomíname ju, aby ti ten názov nebol cudzí, keď naň narazíš v pracovných inzerátoch alebo v tímoch. Na cvičeniach s ňou ale pracovať nebudeme.
 
 !!! tip "Ktorú cestu si vybrať?"
-    Ak chceš zručnosť do životopisu a nevadí ti inštalácia — **Axure** (v praxi oň môžeš zavadiť pri návrhu informačných systémov). Ak chceš rýchly výsledok v prehliadači — **Visily**. Hodnotí sa výsledok (klikateľný prototyp verný tvojmu návrhu), nie nástroj.
+    Ak chceš zručnosť do životopisu a nevadí ti inštalácia — **Axure** (v praxi oň môžeš zavadiť pri návrhu informačných systémov). Ak chceš rýchly výsledok v prehliadači — **Visily** alebo **MagicPath**. Hodnotí sa výsledok (klikateľný prototyp verný tvojmu návrhu), nie nástroj.
 
 !!! note "AI vzory áno, AI návrh nie"
-    Vo Visily pokojne využi AI na **prevod tvojej fotky** na wireframe — to je tvoj návrh, len prekreslený. Neplatí to pre generovanie obrazoviek z textu („navrhni mi web kaviarne") — vtedy už nenavrhuješ ty, ale AI, a pravidlo časti 1 je porušené.
+    Vo Visily aj v MagicPath pokojne využi AI na **prevod tvojej fotky** na wireframe — to je tvoj návrh, len prekreslený. V MagicPath to povedz v prompte výslovne, napríklad „Prekresli obrazovky z nahratej fotky do jednoduchého wireframu — rovnaké rozloženie, rovnaké texty, nič nepridávaj ani nevylepšuj." Neplatí to pre generovanie obrazoviek z textu („navrhni mi web kaviarne") — vtedy už nenavrhuješ ty, ale AI, a pravidlo časti 1 je porušené.
 
 ## Krok 2 — Prenes obrazovky 🖥️
 
-Prekresli (alebo cez Visily prekonvertuj a uprac) obrazovky z papierového prototypu — **vrátane opráv z guerilla testu**. Drž sa zásad:
+Prekresli (alebo cez Visily či MagicPath prekonvertuj a uprac) obrazovky z papierového prototypu — **vrátane opráv z guerilla testu**. Drž sa zásad:
 
 - **Verne k návrhu:** prototyp má zodpovedať tvojej informačnej architektúre a papierovým obrazovkám. Nezačínaj odznova „lebo v počítači to zvádza na krajšie".
 - **Obsah radšej skutočný:** namiesto *lorem ipsum* píš skutočné nadpisy a texty svojho webu („Rezervuj si stôl", nie „Button 1"). AI v časti 2 tieto texty prevezme.
@@ -41,7 +43,7 @@ Prekresli (alebo cez Visily prekonvertuj a uprac) obrazovky z papierového proto
 
 ## Krok 3 — Prepoj obrazovky do klikateľného celku 🔗
 
-Toto je krok, ktorý z obrázkov robí prototyp: nastav **prepojenia** — klik na „Rezervovať" vedie na formulár, klik na logo vedie domov, odoslanie formulára vedie na poďakovanie. V Axure sa to robí interakciami na prvkoch, vo Visily prepojeniami v prototype móde.
+Toto je krok, ktorý z obrázkov robí prototyp: nastav **prepojenia** — klik na „Rezervovať" vedie na formulár, klik na logo vedie domov, odoslanie formulára vedie na poďakovanie. V Axure sa to robí interakciami na prvkoch, vo Visily prepojeniami v prototype móde, v MagicPath si prepojenia vyžiadaš v chate (napíš, ktoré tlačidlo kam vedie) a overíš ich v náhľade.
 
 Ak pracuješ v Axure, pridaj **minimálne dva druhy interakcií**:
 
@@ -97,7 +99,7 @@ Nálada, farby, príklady webov, ktorých štýl sa ti páči.
 
 ## ✅ Skontroluj si výstup
 
-- [ ] Mám **klikateľný prototyp** (Axure alebo Visily) so všetkými obrazovkami z papierovej verzie.
+- [ ] Mám **klikateľný prototyp** (Axure, Visily alebo MagicPath) so všetkými obrazovkami z papierovej verzie.
 - [ ] Sú v ňom **zapracované opravy** z guerilla testu a texty sú skutočné, nie výplňové.
 - [ ] **Všetky tlačidlá niekam vedú** — preklikal som každú cestu.
 - [ ] (Axure) Mám **aspoň dva druhy interakcií** — stránkovú (preklik) aj štýlovú (napr. zmena farby v menu).
@@ -108,7 +110,7 @@ Nálada, farby, príklady webov, ktorých štýl sa ti páči.
 
 - Interaktívny prototyp odstraňuje nedorozumenia — ukazuje, **čo sa stane po kliknutí**.
 - Prototyp je **zadanie pre realizátora** — v tvojom prípade pre AI. Čo v ňom chýba, to si AI domyslí.
-- Nástroj je vec voľby (Axure = profesionálny štandard, Visily = rýchla AI cesta) — hodnotí sa návrh.
+- Nástroj je vec voľby (Axure = profesionálny štandard, MagicPath alebo Visily = rýchla AI cesta) — hodnotí sa návrh.
 - **Design brief** = celý tvoj semestrálny návrh na pár stranách: cieľ, persóny, štruktúra, obrazovky, štýl.
 
 Tým sa končí návrhová časť predmetu. Gratulujem — máš navrhnutý web, otestovaný na dvoch kolegoch, a zadanie, s ktorým sa dá stavať. V časti 2 sa naučíš presne to: **postaviť ho s AI a dať na internet.**
