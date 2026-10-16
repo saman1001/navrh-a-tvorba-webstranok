@@ -29,6 +29,15 @@ Zatiaľ nekóduj. Zadanie webu, ktorý ideme stavať, je v súbore docs/zadanie-
 
 Prečítaj si návrh a **porovnaj ho so svojím prototypom** — sedí rozloženie? Nechýba funkcia, ktorú potrebuje tvoja persóna? Prípadne uprav („pridaj sekciu s otváracími hodinami", „kontaktný formulár nechcem"). Až keď si spokojný, dáš AI zelenú.
 
+!!! tip "Ako dostať prototyp do Copilota — obrázkami"
+    Copilot tvoj prototyp v Axure, Visily ani MagicPath neotvorí a odkaz naň mu nepomôže. Funguje to isté, čo pri style guide v bloku 6 — obrázok. Každú obrazovku prototypu si odfoť (Win + Shift + S) alebo stiahni ako obrázok a nahraj do priečinka `docs/prototyp/` (napr. `uvod.png`, `cennik.png`). Potom pri stavbe každej obrazovky vlož obrázok do Copilot Chatu (Ctrl + V) spolu s promptom:
+
+    ```
+    Postav úvodnú stránku presne podľa rozloženia na priloženom obrázku (docs/prototyp/uvod.png). Zadanie webu je v docs/zadanie-webu.md, dizajn podľa docs/style-guide.md. Čisté HTML, CSS a JavaScript v troch súboroch index.html, styles.css, script.js, bez frameworkov a bez knižníc z internetu. Texty použi skutočné z obrázka, nie lorem ipsum. Zatiaľ len túto jednu obrazovku.
+    ```
+
+    Náhľad porovnaj s obrázkom a pokračuj ďalšou obrazovkou. MagicPath vie stiahnuť aj kód (záložka Code → Download), ale je to React a Tailwind — na našom predmete ho nepoužívaš, obrázok stačí.
+
 ### 2. Stavaj po malých krokoch
 
 Jeden prompt = jedna vec. Nie „sprav mi celý web naraz", ale „urob hlavičku s názvom a menu", potom „pridaj hero sekciu", potom „pridaj cenník". Po **každom** vydarenom kroku commitni (ulož míľnik), aby si sa mal kam vrátiť.
