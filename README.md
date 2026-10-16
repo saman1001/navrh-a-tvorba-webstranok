@@ -5,7 +5,7 @@ Postavený na [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## Štruktúra
 
-Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **postaví s AI** a nakoniec **odprezentuje**.
+Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **postaví s AI** a nakoniec **odprezentuje**. Blok 9 (API) a zoznam úloh v bloku 10 sú bonus pre rýchlejších — povinná dráha pokračuje z bloku 8 nasadením a blokom 11.
 
 - **Časť 1 — Webdizajn** (`docs/01-webdizajn/`) — bloky 1–5: cieľ webu, persóny, informačná architektúra, papierový a interaktívny prototyp; výstupom je design brief (zadanie pre AI). Šablóny a vzory sú v `docs/01-webdizajn/subory/`.
 - **Časť 2 — Vibe coding** (`docs/02-vibe-coding/`) — bloky 6–11: tvorba webu s AI asistentom; v bloku 11 študent postaví web navrhnutý v časti 1.
@@ -13,6 +13,7 @@ Predmet je jedna dráha cez 12 blokov: študent si web **navrhne**, potom ho **p
 - **Znalostná báza** (`docs/znalostna-baza/`) — návody a postupy, na ktoré bloky odkazujú.
 - **Sylabus cvičení** (`SYLABUS-CVICENIA.md`) — metodická príručka pre vyučujúceho (12 cvičení); je mimo `docs/`, takže sa nedostane do webu pre študentov.
 - **Style guide predmetových webov** (`style_predmety.md`) — spoločný vizuálny štandard pre weby predmetov; tento web je jeho referenčná implementácia.
+- **Analytika** (`docs/javascripts/umami.js`) — self-hosted Umami bez cookies a bez consent lišty, k tomu stránka Ochrana súkromia (`docs/ochrana-sukromia.md`) odkazovaná z pätičky.
 - **Roadmapa** (`ROADMAP.md`) — checklist, čo je hotové a čo čaká.
 - **Stav projektu** (`CURRENT.md`) — interný snapshot stavu pre vývoj; spolu so zadaním (`SPEC.md`) je mimo repozitára.
 - **Šablóna pre študentov** — samostatný repozitár [eoam-vibe-web-template](https://github.com/saman1001/eoam-vibe-web-template) (lokálne vnorený v tomto priečinku, v tomto repe ignorovaný).
@@ -37,6 +38,7 @@ Web beží na GitHub Pages s vlastnou doménou: **https://tvorbawww.fabus.eu**
 ```bash
 python -m mkdocs gh-deploy --force   # build + nasadenie na GitHub Pages (vetva gh-pages)
 mkdocs build                          # len lokálny build do site/ (dá sa otvoriť dvojklikom)
+python -m mkdocs build --strict       # kontrola pred nasadením — musí prejsť bez warningov
 ```
 
 ## PDF archív semestra

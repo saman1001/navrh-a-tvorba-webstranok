@@ -13,9 +13,13 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Šablóny a vzory na stiahnutie k blokom 1–5 (persóny, IA mind mapa, papierový prototyp, Axure vzor, cieľ webu)
 - [x] Vzorový design brief doručovacej spoločnosti + ukážka výstupu z Claude Design (blok 5)
 - [x] Požiadavka na interakcie v Axure prototype — stránková + štýlová (blok 5)
+- [x] MagicPath ako ďalšia AI cesta k interaktívnemu prototypu popri Visily (blok 5)
+- [x] Blok 9 a zoznam úloh v bloku 10 označené ako bonus, po bloku 8 sa pokračuje nasadením a blokom 11
+- [x] Tip, ako dostať prototyp z Axure, Visily alebo MagicPath do Copilota obrázkami (blok 11)
 - [ ] Dráha na 10 cvičení — povinné jadro, nasadenie spojené s vlastným projektom, ostatné bloky označené ako bonus pre rýchlejších, desiate cvičenie príprava referátu, prezentácie a dokončenie webu, prezentácie v posledných dvoch cvičeniach (nový beh predmetu)
 - [ ] Postup rozbaľovacieho menu v Axure alebo ekvivalentnom nástroji (blok 5)
 - [ ] Zoznam nástrojov na testovanie webu — responzívnosť, WCAG, HTML, rýchlosť, kompletný test (blok 10)
+- [ ] Návod na prostredie — aktualizovať popis plánov GitHub Copilot (Student plán, AI kredity namiesto limitu chatových správ)
 
 ## Web
 
