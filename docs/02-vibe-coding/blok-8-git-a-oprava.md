@@ -156,4 +156,7 @@ Skontroluj, či ostala niektorá z 5 ukrytých chýb — popíš ju, ale neoprav
 
 Najdôležitejšie: **hľadať a popisovať chyby je cennejšie než tvoriť od nuly.** A **vygenerované ešte neznamená hotové** — vždy nasleduje kontrola.
 
-➡️ Pokračuj na **Blok 9**, kde spojíš všetko doteraz naučené dokopy.
+➡️ Ďalej si daj portfólio online podľa návodu [Nasadenie (GitHub Pages)](../znalostna-baza/nasadenie-github-pages.md) a potom pokračuj na **[Blok 11 — Vlastný projekt](blok-11-vlastny-projekt.md)**, kde spojíš všetko doteraz naučené dokopy.
+
+!!! note "Blok 9 a zoznam úloh z bloku 10 sú bonus"
+    [Blok 9 — API a bezpečnosť](blok-9-api-a-bezpecnost.md) a časť A bloku 10 (zoznam úloh) sa na cvičení nerobia. Sú pre tých, ktorých to láka a majú hotové ostatné — na vlastný projekt ich nepotrebuješ.

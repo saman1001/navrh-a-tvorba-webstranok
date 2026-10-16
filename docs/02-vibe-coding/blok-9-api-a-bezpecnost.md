@@ -1,5 +1,8 @@
 # Blok 9 — API a bezpečnosť 🔌
 
+!!! tip "Bonusový blok pre šikovných"
+    Tento blok sa na cvičení nerobí a na vlastný projekt ho nepotrebuješ. Je pre teba, ak máš portfólio hotové a chceš si skúsiť web so živými dátami z internetu. Povinná cesta pokračuje [Blokom 11 — Vlastný projekt](blok-11-vlastny-projekt.md).
+
 V tomto bloku pridáš do svojho portfólia malú appku, ktorá **berie živé dáta z internetu** — prevodník mien s aktuálnymi kurzami. Zároveň sa naučíš dôležitú vec: ako **bezpečne** narábať s prístupovým kľúčom a ako rozpoznať, keď si AI **vymýšľa**.
 
 ## 🍽️ Čo je API — po ľudsky

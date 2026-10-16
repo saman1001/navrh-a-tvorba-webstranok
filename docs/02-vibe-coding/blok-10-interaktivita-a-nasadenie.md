@@ -13,6 +13,9 @@ Najskôr pridáš do stránky **interaktívnu appku** — jednoduchý zoznam úl
 
 ## Časť A — Interaktivita (zoznam úloh)
 
+!!! tip "Časť A je bonus pre šikovných"
+    Zoznam úloh sa na cvičení nerobí a na vlastný projekt ho nepotrebuješ. Ak ťa láka appka, ktorá si pamätá dáta, sprav si ju doma. Povinná je **časť B — Nasadenie** nižšie, bez nej tvoj web nebude online.
+
 ### Ako budeme pracovať: najskôr sa opýtaj, potom vyber
 
 Skús odolať pokušeniu hneď povedať AI „sprav mi TODO appku". Lepšie je pracovať **v dvoch krokoch**:
