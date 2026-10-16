@@ -1514,6 +1514,13 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Zatiaľ nekóduj. Zadanie webu, ktorý ideme stavať, je v súbore docs/zadanie-webu.md — cieľ, používatelia a štruktúra. Navrhni, z akých sekcií bude prvá verzia (MVP) a čo bude v každej sekcii. Drž sa môjho návrhu. Počkaj na moje schválenie.
 </code></pre></div>
 <p>Prečítaj si návrh a <strong>porovnaj ho so svojím prototypom</strong> — sedí rozloženie? Nechýba funkcia, ktorú potrebuje tvoja persóna? Prípadne uprav („pridaj sekciu s otváracími hodinami", „kontaktný formulár nechcem"). Až keď si spokojný, dáš AI zelenú.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ako dostať prototyp do Copilota — obrázkami</p>
+<p>Copilot tvoj prototyp v Axure, Visily ani MagicPath neotvorí a odkaz naň mu nepomôže. Funguje to isté, čo pri style guide v bloku 6 — obrázok. Každú obrazovku prototypu si odfoť (Win + Shift + S) alebo stiahni ako obrázok a nahraj do priečinka <code>docs/prototyp/</code> (napr. <code>uvod.png</code>, <code>cennik.png</code>). Potom pri stavbe každej obrazovky vlož obrázok do Copilot Chatu (Ctrl + V) spolu s promptom:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Postav úvodnú stránku presne podľa rozloženia na priloženom obrázku (docs/prototyp/uvod.png). Zadanie webu je v docs/zadanie-webu.md, dizajn podľa docs/style-guide.md. Čisté HTML, CSS a JavaScript v troch súboroch index.html, styles.css, script.js, bez frameworkov a bez knižníc z internetu. Texty použi skutočné z obrázka, nie lorem ipsum. Zatiaľ len túto jednu obrazovku.
+</code></pre></div>
+<p>Náhľad porovnaj s obrázkom a pokračuj ďalšou obrazovkou. MagicPath vie stiahnuť aj kód (záložka Code → Download), ale je to React a Tailwind — na našom predmete ho nepoužívaš, obrázok stačí.</p>
+</div>
 <h3 id="2-stavaj-po-malych-krokoch">2. Stavaj po malých krokoch<a class="headerlink" href="#2-stavaj-po-malych-krokoch" title="Permanent link">&para;</a></h3>
 <p>Jeden prompt = jedna vec. Nie „sprav mi celý web naraz", ale „urob hlavičku s názvom a menu", potom „pridaj hero sekciu", potom „pridaj cenník". Po <strong>každom</strong> vydarenom kroku commitni (ulož míľnik), aby si sa mal kam vrátiť.</p>
 <div class="admonition note">
@@ -1531,7 +1538,7 @@
 <p>Celý postup kontroly máš v <a href="../znalostna-baza/kontrola-webu.html">Kontrola webu</a>. Toto je najdôležitejší krok — nepreskakuj ho.</p>
 <h3 id="4-ked-sa-nieco-pokazi">4. Keď sa niečo pokazí<a class="headerlink" href="#4-ked-sa-nieco-pokazi" title="Permanent link">&para;</a></h3>
 <p>Nepíš AI len „oprav to". Popíš <strong>presne</strong>, čo vidíš:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Po kliknutí na tlačidlo „Objednať" sa nič nestane. Malo by sa zobraziť poďakovanie. V konzole (F12) je červená chyba: [sem skopíruj text chyby]. Nájdi príčinu a oprav to.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Po kliknutí na tlačidlo „Objednať" sa nič nestane. Malo by sa zobraziť poďakovanie. V konzole (F12) je červená chyba: [sem skopíruj text chyby]. Nájdi príčinu a oprav to.
 </code></pre></div>
 <p>Ak sa web pokazí tak, že sa nevieš pohnúť, vráť sa k poslednému vydarenému commitu — návod je v <a href="../znalostna-baza/git-zachranna-brzda.html">Git — záchranná brzda</a>. Preto commituješ po každom kroku.</p>
 <h3 id="5-ak-potrebujes-data-z-internetu">5. Ak potrebuješ dáta z internetu<a class="headerlink" href="#5-ak-potrebujes-data-z-internetu" title="Permanent link">&para;</a></h3>
@@ -1544,7 +1551,7 @@
 </div>
 <h2 id="rozhodni-sa-ako-manazer">🧑‍💼 Rozhodni sa ako manažér<a class="headerlink" href="#rozhodni-sa-ako-manazer" title="Permanent link">&para;</a></h2>
 <p>Občas ti AI ponúkne viac ciest — napríklad „formulár môžem spraviť takto alebo takto". Nemusíš rozumieť kódu, aby si sa rozhodol. Nech ti to AI vysvetlí po ľudsky. Do Copilot Chatu napíš:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Navrhni 2 rôzne spôsoby, ako toto spraviť. Pri každom napíš: ako to funguje (pre laika), čo ma to bude stáť (čas, peniaze, zložitosť), čo sa pri ňom najskôr pokazí. Na konci nič neodporúčaj — rozhodnem sa ja.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Navrhni 2 rôzne spôsoby, ako toto spraviť. Pri každom napíš: ako to funguje (pre laika), čo ma to bude stáť (čas, peniaze, zložitosť), čo sa pri ňom najskôr pokazí. Na konci nič neodporúčaj — rozhodnem sa ja.
 </code></pre></div>
 <p><strong>Rozhodnutie je na tebe, implementácia na AI.</strong> Ty si manažér: vyberáš smer podľa toho, čo dáva zmysel pre tvoj projekt. AI je ten, kto to potom postaví.</p>
 <h2 id="checklist-odovzdania">✅ Checklist odovzdania<a class="headerlink" href="#checklist-odovzdania" title="Permanent link">&para;</a></h2>
