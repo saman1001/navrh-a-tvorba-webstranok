@@ -13,6 +13,7 @@ Checklist funkcií projektu — čo je hotové a čo čaká. Bez dátumov (hist�
 - [x] Šablóny a vzory na stiahnutie k blokom 1–5 (persóny, IA mind mapa, papierový prototyp, Axure vzor, cieľ webu)
 - [x] Vzorový design brief doručovacej spoločnosti + ukážka výstupu z Claude Design (blok 5)
 - [x] Požiadavka na interakcie v Axure prototype — stránková + štýlová (blok 5)
+- [ ] Dráha na 10 cvičení — povinné jadro, nasadenie spojené s vlastným projektom, ostatné bloky označené ako bonus pre rýchlejších, desiate cvičenie príprava referátu, prezentácie a dokončenie webu, prezentácie v posledných dvoch cvičeniach (nový beh predmetu)
 - [ ] Postup rozbaľovacieho menu v Axure alebo ekvivalentnom nástroji (blok 5)
 - [ ] Zoznam nástrojov na testovanie webu — responzívnosť, WCAG, HTML, rýchlosť, kompletný test (blok 10)
 
